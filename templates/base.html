@@ -1,0 +1,84 @@
+$def with (page)
+<!doctype html>
+<html lang="es">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+       <title>Proyecto Final</title>
+               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+       <!--<link rel="stylesheet" href="../static/css/bootstrap.min.css">-->
+       <link rel="stylesheet" href="../static/css/estilos.css">
+       <link rel="stylesheet" href="../static/css/style.css">
+   </head>
+   <body>
+       <header>
+		      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+		          <div class="container">
+		              <div class="navbar-header">
+		                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+                                <span class="sr-only">Menu</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                          </button>
+                          
+                          <a href="/" class="navbar-brand">Proyecto Final</a>
+	                  </div>
+                      
+                      <div class="collapse navbar-collapse" id="navbar-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="/">ANALISIS DE DATOS</a></li>
+                                <li><a href="/login">CRUD</a></li>
+                            </ul>
+                            
+                            <form action="" class="navbar-form navbar-right" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Buscar">
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </form>
+                      </div>
+	              </div>
+	          </nav>
+    </header>
+       
+    <section class="jumbotron">
+        <div class="container">
+            <h1>Proyecyo Final</h1>
+            <p>Analisis de Información</p>
+            <p>CRUD</p>
+        </div>   
+    </section> 
+            
+        $:page
+    </section>
+       
+    <div class="social">
+            <ul>
+                <li><a href="https://www.facebook.com/peraltamaldonado" target="_blank" class="icon-facebook2"></a></li>
+                <li><a href="mailto:1714110453@utec-tgo.edu.mx" target="_blank" class="icon-mail4"></a></li>
+            </ul>
+    </div>
+       
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4 class="post-title">Pagina creada por:</h4>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <h2 class="post-title">Aldo Esaidt Peralta Maldonado</h2>
+                </div>
+            </div>
+        </div>   
+    </footer>
+       
+    <script src="static/js/jquery-3.1.1.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+   </body>
+</html>

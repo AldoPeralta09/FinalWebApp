@@ -1,0 +1,96 @@
+$def with (post)
+
+<div class="row container">
+    
+    <section class="container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        
+        <section class="main container">
+        <div class="row">
+            <section class="posts col-md-12">
+                <div class="migas">
+                    <ol class="breadcrumb">
+                        <li><a href="/">Proyecto Final</a></li>
+                        <li><a href="/viewdata">CRUD</a></li>
+                        <li class="active">Proyecto Final</li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+        
+        <section class="jumbotron">
+            <div class="container">
+                <h2>Editar</h2>
+            </div>   
+        </section>
+        
+        <div class="container">
+            <form method="post" action="">
+                
+                <a class="btn btn-primary btn-block" href="/viewdata">Cancelar</a>
+                <br>
+                
+                <div class="form-group">
+                    <label for="team">Equipo:</label>
+                    <input class="form-control" type="text" value="$post.equipo" id="team" name="team" placeholder="Equipo:">
+                </div>
+
+                <div class="form-group">
+                    <label for="point">Puntos:</label>
+                    <input class="form-control" type="text" value="$post.puntos" id="point" name="point" placeholder="Puntos:">
+                </div>
+
+                <div class="form-group">
+                    <label for="pointprev">Puntos Previos:</label>
+                    <input class="form-control" type="text" value="$post.puntos_previos" id="pointprev" name="pointprev" placeholder="Puntos Previos:">
+                </div>
+
+                <div class="form-group">
+                    <label for="position">Posiciones:</label>
+                    <input class="form-control" type="text" value="$post.posiciones" id="position" name="position" placeholder="Posiciones:">
+                </div>
+
+                <div class="form-group">
+                    <label for="prom1">Promedio 2016:</label>
+                    <input class="form-control" type="text" value="$post.promedio1" id="prom1" name="prom1" placeholder="Promedio 2016:">
+                </div>
+
+                <div class="form-group">
+                    <label for="result1">Resultado (100%):</label>
+                    <input class="form-control" type="text" value="$post.resultado1" id="result1" name="result1" placeholder="Resultado (100%):">
+                </div>
+
+                <div class="form-group">
+                    <label for="prom2">Promedio 2015:</label>
+                    <input class="form-control" type="text" value="$post.promedio2" id="prom2" name="prom2" placeholder="Promedio 2015:">
+                </div>
+
+                <div class="form-group">
+                    <label for="result2">Resultado (50%):</label>
+                    <input class="form-control" type="text" value="$post.resultado2" id="result2" name="result2" placeholder="Resultado (50%):">
+                </div>
+
+                <div class="form-group">
+                    <label for="prom3">Promedio 2014:</label>
+                    <input class="form-control" type="text" value="$post.promedio3" id="prom3" name="prom3" placeholder="Promedio 2014:">
+                </div>
+
+                <div class="form-group">
+                    <label for="result3">Resultado (30%):</label>
+                    <input class="form-control" type="text" value="$post.resultado3" id="result3" name="result3" placeholder="Resultado (30%):">
+                </div>
+
+                <div class="form-group">
+                    <label for="prom4">Promedio 2013:</label>
+                    <input class="form-control" type="text" value="$post.promedio4" id="prom4" name="prom4" placeholder="Promedio 2013:">
+                </div>
+
+                <div class="form-group">
+                    <label for="result4">Resultado (20%):</label>
+                    <input class="form-control" type="text" value="$post.resultado4" id="result4" name="result4" placeholder="Resultado (20%):">
+                </div>
+
+                <input class="btn btn-primary btn-block" type="submit" value="Actualizar" />
+            </form>
+        </div>
+    </section>
+</div>

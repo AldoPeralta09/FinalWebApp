@@ -1,0 +1,66 @@
+$def with (post)
+<div class="row container">
+    
+    <section class="container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        
+        <div class="row">
+            <section class="posts col-md-12">
+                <div class="migas">
+                    <ol class="breadcrumb">
+                        <li><a href="/">Proyecto Final</a></li>
+                        <li><a href="/viewdata">CRUD</a></li>
+                        <li class="active">Datos Especificos</li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+        
+        <section class="jumbotron">
+            <div class="container">
+                <h2>$post.equipo</h2>
+            </div>   
+        </section>
+        
+        <div class="centraTabla table-responsive">
+            <a class="btn btn-primary btn-block" href="/viewdata">Cancelar</a>
+                <br>
+            <table class="table table-bordered table-hover table-responsive">
+                <thead class="table-active">
+                    <tr class="active">
+                        <th>Nivel</th>
+                        <th>Equipo</th>
+                        <th>Puntos</th>
+                        <th>Puntos Previos</th>
+                        <th>Posiciones</th>
+                        <th>Promedio 2016 (100%)</th>
+                        <th>Resultado 2016</th>
+                        <th>Promedio 2015 (50%)</th>
+                        <th>Resultado 2015</th>
+                        <th>Promedio 2014 (30%)</th>
+                        <th>Resultado 2014</th>
+                        <th>Promedio 2013 (20%)</th>
+                        <th>Resultado 2013</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td>$post.id</td>
+                        <td>$post.equipo</td>
+                        <td>$post.puntos</td>
+                        <td>$post.puntos_previos</td>
+                        <td>$post.posiciones</td>
+                        <td>$post.promedio1</td>
+                        <td>$post.resultado1</td>
+                        <td>$post.promedio2</td>
+                        <td>$post.resultado2</td>
+                        <td>$post.promedio3</td>
+                        <td>$post.resultado3</td>
+                        <td>$post.promedio4</td>
+                        <td>$post.resultado4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div> 

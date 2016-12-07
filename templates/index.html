@@ -1,0 +1,81 @@
+$def with (form,casos)
+<div class="row container">
+    
+    <section class="container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        
+        <div class="row">
+            <section class="posts col-md-12">
+                <div class="migas">
+                    <ol class="breadcrumb">
+                        <li><a href="/">Proyecto Final</a></li>
+                        <li><a href="/">Analisis de Datos</a></li>
+                        <li class="active">Busqueda de Datos</li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+        
+        <section class="jumbotron">
+            <div class="container">
+                <h2>Casos de SIDA detectados en México</h2>
+            </div>   
+        </section>
+        
+        <div class="container boxlogin ">
+            <article class="post clearfix">
+                $if len(casos) > 0:
+                    <h2>Seleccione un año...</h2>
+                    <br>
+                    <br>
+                    <form method="post"> 
+                        $if not form.valid: <p class="error">Try again, Trump:</p>
+                        <div class="container">
+                            $:form.render()
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-lg btn-primary btn-block" value="Enviar"/> 
+                        </div>
+                    </form>
+                    <br>
+                    <br>
+                    <h2>RESULTS</h2>
+                    <div class="centraTabla table-responsive">
+                    <table class="table table-bordered table-hover table-responsive">
+                                <thead class="table-active">
+                                    <tr>
+                                        <th>Estado</th>
+                                        <th># Casos detectados</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        $for estado, caso in casos.items(): 
+                                            <tr>
+                                                <td>$estado</td>
+                                                <td align="center">$caso</td>
+                                            </tr>
+                                </tbody>
+                    </table>
+                    </div>
+                $elif len(casos) == 0:
+                    <h4>Seleccione una opcion...</h4>
+                    <br>
+                    <br>
+                    <form method="post" align="center"> 
+                        $if not form.valid: <p class="error">Try again, Trump:</p>
+                        <div class="form-group">
+                            $:form.render()
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-lg btn-primary btn-block" value="Enviar"/> 
+                        </div>
+                    </form>
+                    <br>
+                    <br>
+            </article>
+        </div>
+    </section>
+</div> 
