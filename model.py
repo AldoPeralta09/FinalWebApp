@@ -1,6 +1,6 @@
 import web, datetime
 
-db = web.database(dbn='mysql', db='fifa', user='root', pw='mikei')
+db = web.database(dbn='mysql', db='heroku_1badb4b9ac7e6f9', user='b9d8d242aa29ad', pw='a96424d8')
 
 def get_posts():
     return db.select('ranking')
