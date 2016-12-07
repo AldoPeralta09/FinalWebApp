@@ -1,2 +1,2 @@
 web.py==0.38
-MySQLdb==2.0
+mysqldb==1.2.5
